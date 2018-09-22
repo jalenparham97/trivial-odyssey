@@ -1,0 +1,1143 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background: #000;
+}
+
+.portrait {
+    display: none;
+}
+
+
+/************************/
+
+
+/*Intro*/
+
+
+/************************/
+
+.intro_container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/Intro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 200px;
+}
+
+.intro_container p.intro_text {
+    color: #fff;
+    width: 80%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.button__play {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    font-size: 18px;
+}
+
+.button__play:hover,
+.button__instructions--intro:hover {
+    background-color: #337eaf;
+}
+
+.button__intro--section {
+    display: flex;
+}
+
+.button__intro--section button {
+    margin: 0 10px;
+}
+
+.button__instructions--intro {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    font-size: 18px;
+}
+
+
+/*******************************/
+
+
+/*Map*/
+
+
+/*******************************/
+
+.map__canvas {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo__map {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 400px;
+    height: 40px;
+}
+
+#canvas {
+    background-image: url('img/map.png');
+    height: 600px;
+    width: 800px;
+    margin: .5%;
+    object-fit: fill;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__health {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+    padding-top: 2%;
+}
+
+.story__container {
+    background: url('img/wide-scroll-rotate.png');
+    background-size: 82%;
+    width: 475px;
+    height: 575px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.story__container .story {
+    padding: 15% 24%;
+    width: 300px;
+    height: 340px;
+    line-height: 1.5;
+}
+
+.story__container button.fight {
+    position: absolute;
+    bottom: 75px;
+    left: 190px;
+    text-transform: uppercase;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.story__container button.fight:hover {
+    cursor: pointer;
+    background-color: #337eaf;
+}
+
+.bottom__map--nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .button__intro,
+.button__instructions,
+.button__info,
+.skip__button {
+    margin-left: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+section .button__intro:hover,
+.button__instructions:hover,
+.button__info:hover,
+.skip__button:hover {
+    background-color: #337eaf;
+}
+
+.button__intro {
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    justify-self: flex-end;
+}
+
+.button__instructions {
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+}
+
+.button__info {
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+}
+
+.skip__button {
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    margin-right: 50px;
+}
+
+.popup {
+    position: relative;
+}
+
+.heart__instructions {
+    background: url('img/wide-scroll.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: absolute;
+    left: 350px;
+    bottom: 200px;
+    width: 600px;
+    height: 400px;
+}
+
+.answer__section {
+    display: flex;
+    justify-content: center;
+}
+
+.heart__question {
+    padding: 50px 80px;
+    position: relative;
+}
+
+.heart__question button {
+    border: 3px solid #000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+}
+
+.heart__question button:hover {
+    background-color: #337eaf;
+}
+
+.heart__question .answers {
+    padding: 10px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.heart__question .x__button {
+    font-size: 20px;
+    position: absolute;
+    top: 335px;
+    left: 450px;
+    color: #fff;
+}
+
+.out_come {
+    position: absolute;
+    margin: 70px 75px 100px 0;
+    padding: 0 50px;
+    line-height: 2;
+}
+
+.correct__map {
+    animation: randomResponseRightMap 0.8s infinite;
+}
+
+.incorrect__map {
+    animation: randomResponseWrongMap 0.8s infinite;
+}
+
+
+/******************************/
+
+
+/*Instructions*/
+
+
+/******************************/
+
+.section__instructions {
+    background: url('img/wide-scroll.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.instructions__container {
+    width: 700px;
+    height: 300px;
+    padding: 75px 0 0 170px;
+    position: relative;
+}
+
+.instructions__container h1 {
+    text-align: center;
+    color: #DD2020;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.instructions__container li {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.instructions__container button {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    position: absolute;
+    left: 460px;
+    font-size: 16px;
+}
+
+.instructions__container button:hover {
+    background-color: #337eaf;
+}
+
+
+/***************************/
+
+
+/*Character*/
+
+
+/****************************/
+
+.character__title {
+    text-align: center;
+    color: #DD2020;
+}
+
+.ul__gods {
+    display: flex;
+    list-style: none;
+}
+
+.ul__gods li {
+    margin: 0 10px;
+}
+
+.ul__gods li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.ul__gods li a:hover {
+    color: #FFB046;
+}
+
+.bio {
+    margin: 0 auto;
+    background: url('img/wide-scroll.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 900px;
+}
+
+.bio p.select__bio {
+    color: #DD2020;
+    text-align: center;
+    padding-top: 250px;
+    font-size: 18px;
+}
+
+.select__bio {
+    padding: 0 100px;
+    line-height: 2;
+}
+
+.bio__info {
+    padding: 50px 100px 0 100px;
+}
+
+.bio__info img {
+    width: 250px;
+    height: 250px;
+    margin-left: 200px;
+}
+
+.bio__info p {
+    line-height: 1.5;
+    color: #000;
+}
+
+.back__button {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    position: relative;
+    bottom: 100px;
+    left: 565px;
+    font-size: 16px;
+}
+
+.back__button:hover {
+    background-color: #337eaf;
+}
+
+
+/**************************/
+
+
+/*Player Health*/
+
+
+/**************************/
+
+.img__heart {
+    width: 2rem;
+    height: 2rem;
+}
+
+.img__heart__change:first-child {
+    animation: blinker 1s linear infinite;
+    animation-iteration-count: 4;
+}
+
+
+/**************************/
+
+
+/*Battle Ground*/
+
+
+/*************************/
+
+.battle__container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.timer__container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.battle__img__bg {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timer {
+    background-color: #fff;
+    opacity: .8;
+    border: 2px solid #000;
+    margin: 15px;
+    border-radius: .25rem;
+    padding: 8px;
+}
+
+.section__game-over {
+    animation: blinkingText 0.8s infinite;
+    font-size: 300%;
+    z-index: 10;
+    text-align: center;
+}
+
+.battle__char__img {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 25%;
+    height: 300px;
+}
+
+.question__container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    background: url('img/wide-scroll.png');
+    background-size: 100% 100%;
+    opacity: 0.8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 2%;
+}
+
+.question__container p.trivia__question {
+    margin-bottom: 30px;
+    padding: 10px;
+    margin: 3% 15% 1% 15%;
+}
+
+.answers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.answers button {
+    padding: 10px;
+    max-width: 175px;
+    border-radius: .25rem;
+    background: #FFB046;
+    color: #000;
+    border: 3px solid black;
+    cursor: pointer;
+    line-height: 1.5;
+    margin-right: 20px;
+}
+
+section.answers button:hover {
+    background: #409edb;
+    color: #fff;
+}
+
+.start__button {
+    background-color: #409edb;
+    border: 3px solid #000;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: .25rem;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.start__button:hover {
+    cursor: pointer;
+}
+
+.text_container {
+    margin: auto 10%;
+    font-size: 20px;
+}
+
+.text_container p.answer_text {
+    font-size: 20px;
+}
+
+.text_container span {
+    color: #DD2020;
+}
+
+.next_question_button {
+    padding: 20px 30px;
+    border-radius: 3px;
+    background: #DD2020;
+    color: #fff;
+    border: 3px solid black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.next_question_button:hover {
+    background: #DD2020;
+}
+
+.random__response {
+    text-align: center;
+}
+
+.random__response p {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 70px;
+    line-height: 1.5
+}
+
+.correct {
+    animation: randomResponseRight 0.8s infinite;
+}
+
+.incorrect {
+    animation: randomResponseWrong 0.8s infinite;
+}
+
+
+/***************************/
+
+
+/*Victory*/
+
+
+/****************************/
+
+.section__victory {
+    display: flex;
+    background-image: url('img/Olympus2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.h1__winner {
+    text-align: center;
+    animation: blinkingText 0.8s infinite;
+    margin: 5rem 0 3rem 0;
+    font-size: 50px;
+}
+
+.section__wide-scroll {
+    width: 40%;
+    height: 400px;
+    background-image: url('img/wide-scroll.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.p__credits {
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+.button__play-again {
+    margin: 3rem 0 0 0;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #409edb;
+    color: #fff;
+    border: 3px solid #000;
+    font-size: 16px
+}
+
+.button__play-again:hover {
+    background-color: #337eaf;
+}
+
+
+/**************************/
+
+
+/* Animations */
+
+
+/**************************/
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #F83800;
+    }
+    30% {
+        color: #3CBCFC;
+    }
+    50% {
+        color: #007800;
+    }
+    70% {
+        color: #F83800;
+    }
+    100% {
+        color: #3CBCFC;
+    }
+}
+
+@keyframes randomResponseRight {
+    0% {
+        color: #007800;
+    }
+    30% {
+        color: #fff;
+    }
+    50% {
+        color: #007800;
+    }
+    70% {
+        color: #fff;
+    }
+    100% {
+        color: #007800;
+    }
+}
+
+@keyframes randomResponseRightMap {
+    0% {
+        color: #007800;
+    }
+    30% {
+        color: #000;
+    }
+    50% {
+        color: #007800;
+    }
+    70% {
+        color: #000;
+    }
+    100% {
+        color: #007800;
+    }
+}
+
+@keyframes randomResponseWrongMap {
+    0% {
+        color: #DD2020;
+    }
+    30% {
+        color: #000;
+    }
+    50% {
+        color: #DD2020;
+    }
+    70% {
+        color: #000;
+    }
+    100% {
+        color: #DD2020;
+    }
+}
+
+@keyframes randomResponseWrong {
+    0% {
+        color: #DD2020;
+    }
+    30% {
+        color: #fff;
+    }
+    50% {
+        color: #DD2020;
+    }
+    70% {
+        color: #fff;
+    }
+    100% {
+        color: #DD2020;
+    }
+}
+
+map.ng-enter {
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+
+
+/* The finishing CSS styles for the enter animation */
+
+map.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+
+/* portrait comments */
+
+@media screen and (orientation: portrait) {
+    .portrait {
+        display: block;
+        margin: 0 auto;
+        color: #FFB046;
+        line-height: 1.5;
+        background: #000;
+        margin: 20% 10%;
+        width: 80%;
+        z-index: 100;
+    }
+    .intro_container {
+        display: none;
+    }
+    .map__canvas {
+        display: none;
+    }
+    .bottom__map--nav {
+        display: none;
+    }
+    .battle__container {
+        display: none;
+    }
+    .section__instructions {
+        display: none;
+    }
+    .character__container {
+        display: none;
+    }
+    .section__victory {
+        display: none;
+    }
+}
+
+
+/* landscape */
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    /*Intro*/
+    .logo {
+        margin-top: 5px;
+        width: 80%;
+    }
+    .intro_container p.intro_text {
+        text-align: center;
+    }
+    .button__play,
+    .button__instructions--intro {
+        padding: 0.5rem;
+        font-size: 13px;
+    }
+    /*map*/
+    #canvas {
+        height: 300px;
+        width: 400px;
+        margin: .1%;
+    }
+    .logo__map {
+        top: 10px;
+        left: 15px;
+        width: 200px;
+        height: 25px;
+    }
+    .img__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__health {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 0px;
+        padding-top: 2%;
+    }
+    .img__heart {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .story__container {
+        background: none;
+        width: 425px;
+        height: 250px;
+        /* padding-bottom: 0px; */
+        margin-bottom: 10px;
+    }
+    .story__container .story {
+        padding: 0px 0px 0px 10px;
+        line-height: 1.25;
+        font-size: 11px;
+        color: #FFB046;
+        width: 55%;
+    }
+    .story__container button.fight {
+        bottom: 0px;
+        left: 75px;
+        font-size: 11px;
+    }
+    .bottom__map--nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    section .button__intro,
+    .button__instructions,
+    .button__info,
+    .skip__button {
+        margin-left: 5px;
+        padding: 10px 10px;
+        font-size: 8.5px;
+    }
+    .skip__button {
+        margin-right: 98px;
+    }
+    .heart__instructions {
+        left: 125px;
+        width: 400px;
+        height: 300px;
+        bottom: -30px;
+    }
+    .heart__question {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 45px;
+        margin-top: 50px;
+    }
+    .heart__question button {
+        font-size: 8px;
+        border: solid #000 2px;
+    }
+    .heart__question .x__button {
+        position: absolute;
+        bottom: 100px;
+    }
+    .incorrect__map,
+    .correct__map {
+        position: absolute;
+        margin-top: 10px;
+        height: 250px;
+        width: 250px;
+    }
+    /*battle-ground*/
+    .battle__char__img {
+        height: 150px;
+        top: 15%;
+    }
+    .timer {
+        font-size: 10px;
+    }
+    .question__container {
+        height: 150px;
+    }
+    .question__container p.trivia__question {
+        font-size: 8px;
+    }
+    section.answers button {
+        padding: 5px;
+        max-width: 100px;
+        line-height: 1.5;
+        margin-right: 10px;
+        font-size: 8px;
+    }
+    .start__button {
+        margin-top: 11px;
+        padding: 10px 15px;
+        border-radius: .25rem;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .text_container {
+        font-size: 10px;
+    }
+    .next_question_button {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .random__response p {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .text_container p.answer_text {
+        font-size: 15px;
+    }
+    /*INSTRUCTIONS*/
+    .section__instructions {
+        margin-left: 60px;
+        width: 660px;
+        height: 360px;
+    }
+    .instructions__container {
+        padding-left: 15px;
+        padding-top: 55px;
+    }
+    .instructions__container h1 {
+        position: absolute;
+        font-size: 16px;
+        margin-top: 0;
+        left: 165px;
+    }
+    .instructions__container ul {
+        font-size: 10px;
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .instructions__container li {
+        margin-bottom: 10px;
+        left: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .instructions__container button {
+        position: absolute;
+        left: 218px;
+        font-size: 10px;
+        padding: 12px;
+    }
+    /* CHARACTERS*/
+    .character__title {
+        margin-left: 350px;
+        width: 655px;
+    }
+    .ul__gods {
+        padding-left: 3px;
+    }
+    .bio {
+        margin-left: 235px;
+    }
+    /* VICTORY */
+    .h1__winner {
+        font-size: 35px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .p__credits {
+        font-size: 10px;
+        width: 250px;
+        margin-left: 40px;
+        padding-top: 0;
+    }
+    .section__wide-scroll {
+        position: absolute;
+        width: 350px;
+        height: 225px;
+        top: 100px;
+        left: 165px;
+    }
+    .button__play-again {
+        position: absolute;
+        bottom: 5px;
+        font-size: 10px;
+        padding: 10px;
+        left: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /*Intro*/
+    .logo {
+        margin-top: 90px;
+        width: 80%;
+    }
+    .intro_container p.intro_text {
+        margin: 2rem;
+        width: 80%;
+    }
+    .button__play,
+    .button__instructions--intro {
+        margin-top: 1rem;
+        padding: 1.5rem;
+    }
+    /*map*/
+    #canvas {
+        height: 500px;
+        width: 600px;
+        margin: .1%;
+    }
+    .story__container {
+        width: 93%;
+        background: none;
+        ;
+    }
+    .story__container .story {
+        padding: 0px 20px 20px 60px;
+        line-height: 1.25;
+        font-size: 18px;
+        color: #FFB046;
+        width: 60%;
+    }
+    .story__container button.fight {
+        bottom: 30px;
+        left: 150px;
+    }
+    .section__health {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 30px;
+        padding-top: 2%;
+    }
+    .heart__instructions {
+        left: 200px;
+        bottom: 100px;
+        width: 600px;
+        height: 400px;
+    }
+    /*instructions*/
+    .section__instructions {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1020px;
+        height: 750px;
+    }
+    .instructions__container {
+        width: 500;
+        height: 150;
+        padding-left: 105px;
+    }
+    .instructions__container h1 {
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+    .instructions__container ul {
+        font-size: 15px;
+        width: 750px;
+    }
+    .instructions__container button {
+        position: absolute;
+        left: 440px;
+        top: 550px;
+    }
+    /*BATTELGROUND*/
+    .question__container {
+        bottom: 60px;
+    }
+    .battle__char__img {
+        top: 100px;
+    }
+    /* CHARACTERS*/
+    .ul__gods li a {
+        font-size: 12px;
+    }
+    .back__button {
+        position: relative;
+        bottom: 100px;
+        left: 415px;
+        font-size: 16px;
+    }
+    /*VICTORY*/
+    .h1__winner {
+        margin-left: 60px;
+    }
+    .section__wide-scroll {
+        width: 600px;
+        height: 350px;
+        margin-left: 125px;
+    }
+    .p__credits {
+        position: absolute;
+        width: 400px;
+        padding-top: 75px;
+        padding-left: 65px;
+    }
+}
